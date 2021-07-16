@@ -1,4 +1,4 @@
-FROM ubuntu # python:3.7-alpha
+FROM ubuntu
 
 COPY hello.py /
 CMD ["python", "hello.py"]
