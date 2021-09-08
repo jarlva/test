@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Docker Nginx</title>
+</head>
+<body>
+  <h2>Hello from Nginx container</h2>
+
+  <p>Click the button to display the hostname of the current URL.</p>
+
+  <button onclick="myFunction()">Try it</button>
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+
+  <script>
+  function myFunction() {
+    var x = location.hostname;
+    document.getElementById("demo").innerHTML= "Host: " + x;
+    document.getElementById("demo1").innerHTML= "Port: " + location.port ;
+  }
+  </script>
+  
+</body>
+</html>
