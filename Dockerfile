@@ -1,7 +1,7 @@
 # https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html
 # FROM ubuntu:20.04
 # COPY hello.py /
-FROM nginx:latest
+FROM nginx:1.21.6
 RUN apt-get update && apt-get upgrade -y
 # install --no-install-recommends --no-install-suggests -y
 COPY index.html /usr/share/nginx/html/index.html
